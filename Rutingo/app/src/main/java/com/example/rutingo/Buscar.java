@@ -21,7 +21,7 @@ import java.net.URL;
 public class Buscar extends AppCompatActivity {
     private ListView lv_ruta_list;
     private ArrayAdapter adapter;
-    private String getAllRutaURL = "http://130.100.20.194:8080/api_rutas?user_hash=12345&action=get";
+    private String getAllRutaURL = " http://192.168.1.114:8080/api_rutas?user_hash=12345&action=get";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,15 +33,11 @@ public class Buscar extends AppCompatActivity {
         lv_ruta_list = (ListView)findViewById(R.id.lv_ruta_list);
         adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1);
         lv_ruta_list.setAdapter(adapter);
-
-        
-        
-
-
         webServiceRest(getAllRutaURL);
     }
-    
-        
+
+
+
 
     private void webServiceRest(String requestURL){
         try{
@@ -83,6 +79,8 @@ public class Buscar extends AppCompatActivity {
                 hora_inicio_lavor = jsonObject.getString("hora_inicio_lavor");
                 hora_final_lavor = jsonObject.getString("hora_final_lavor");
                 costo = jsonObject.getString("costo");
+
+
                 adapter.add(nombre );
                 adapter.add(punto_inicio );
                 adapter.add(punto_final);
