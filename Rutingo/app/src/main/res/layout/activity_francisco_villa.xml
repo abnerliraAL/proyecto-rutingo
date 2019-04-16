@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F8C80A"
-    tools:context=".Webview">
+    android:background="#636363"
+    tools:context=".Francisco_villa">
 
     <WebView
         android:id="@+id/webView"
@@ -17,6 +17,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 </android.support.constraint.ConstraintLayout>

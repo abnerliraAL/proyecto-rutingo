@@ -1,5 +1,6 @@
 package com.example.rutingo;
 
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -18,26 +19,25 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class Buscar extends AppCompatActivity {
+
+public class Buscar3 extends AppCompatActivity {
     private ListView lv_ruta_list;
     private ArrayAdapter adapter;
-    private String getAllRutaURL = "http://130.100.20.194:8080/api_rutas?user_hash=12345&action=get&id_ruta=1";
+    private String getAllRutaURL = "http://130.100.20.194:8080/api_rutas?user_hash=12345&action=get&id_ruta=3";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_buscar);
+        setContentView(R.layout.activity_buscar3);
 
         StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder().permitNetwork().build());
 
         lv_ruta_list = (ListView)findViewById(R.id.lv_ruta_list);
         adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1);
         lv_ruta_list.setAdapter(adapter);
+
         webServiceRest(getAllRutaURL);
     }
-
-
-
 
     private void webServiceRest(String requestURL){
         try{
@@ -57,6 +57,7 @@ public class Buscar extends AppCompatActivity {
         }
     }
     private void parseInformation(String jsonResult){
+
         JSONArray jsonArray = null;
         String nombre;
         String punto_inicio;
@@ -95,6 +96,7 @@ public class Buscar extends AppCompatActivity {
                 adapter.add(url_ruta);
 
 
+
             }catch (JSONException e){
                 Log.e("error 101", e.getMessage());
 
@@ -102,5 +104,4 @@ public class Buscar extends AppCompatActivity {
             }
         }
     }
-
 }

@@ -24,14 +24,6 @@ public class Index extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -83,6 +75,21 @@ public class Index extends AppCompatActivity
 
         if (id == R.id.nav_ruta) {
             Intent intent = new Intent(getApplicationContext(), Buscar.class);
+            startActivity(intent);
+        }else if (id == R.id.nav_villita) {
+            Intent intent = new Intent(getApplicationContext(), Buscar2.class);
+            startActivity(intent);
+        }else if (id == R.id.nav_francisco) {
+            Intent intent = new Intent(getApplicationContext(), Buscar3.class);
+            startActivity(intent);
+        } else if (id == R.id.nav_mapa) {
+            Intent intent = new Intent(getApplicationContext(), Ampliacion.class);
+            startActivity(intent);
+        }else if (id == R.id.nav_mVilliita) {
+            Intent intent = new Intent(getApplicationContext(), Villita.class);
+            startActivity(intent);
+        }else if (id == R.id.nav_f_villa) {
+            Intent intent = new Intent(getApplicationContext(), Francisco_villa.class);
             startActivity(intent);
         }
 

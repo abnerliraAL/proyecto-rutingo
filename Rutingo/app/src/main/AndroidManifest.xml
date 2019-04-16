@@ -16,8 +16,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Buscar"></activity>
-        <activity android:name=".Webview" />
+        <activity android:name=".Buscar3"></activity>
+        <activity android:name=".Francisco_villa" />
+        <activity android:name=".Villita" />
+        <activity android:name=".Ampliacion" />
+        <activity android:name=".Buscar2" />
+        <activity android:name=".Buscar" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").

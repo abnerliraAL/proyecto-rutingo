@@ -9,23 +9,30 @@
     tools:context=".Index"
     tools:showIn="@layout/app_bar_index">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="210dp"
-        android:layout_height="290dp"
-        android:layout_marginTop="8dp"
-        android:text="
-
-
-
-
-
-
-
-                   RUTINGO"
+    <ImageView
+        android:layout_width="306dp"
+        android:layout_height="322dp"
+        android:layout_gravity="center"
+        android:background="#e5180f"
+        android:src="@drawable/micro"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="84dp"
+        android:text="
+
+            Bienvenido usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="561dp" />
+
+
 
 </android.support.constraint.ConstraintLayout>

@@ -4,24 +4,42 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
-        <item
+
+        <item android:titleCondensed="Rutas"
             android:id="@+id/nav_ruta"
-            android:icon="@drawable/rutas"
-            android:title="ruta 1" />
+
+            android:title="Ampliacion" />
+        <item
+            android:id="@+id/nav_villita"
+
+            android:title="La_villita" />
+
+        <item
+            android:id="@+id/nav_francisco"
+
+            android:title="Francisco" />
+
 
 
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="Mapas">
         <menu>
+
+
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:id="@+id/nav_mapa"
+
+                android:title="Ampliacion" />
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:id="@+id/nav_mVilliita"
+
+                android:title="La_villita" />
+            <item
+                android:id="@+id/nav_f_villa"
+
+                android:title="Fancisco_villa" />
+
         </menu>
     </item>
 
